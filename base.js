@@ -2,7 +2,7 @@
 //
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
-//
+
 // Use this configuration for standard TypeScript Projects.
 
 const env = require('./config/env');
