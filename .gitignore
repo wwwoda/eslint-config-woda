@@ -1,17 +1,22 @@
-### Mac OSX + Windows ###
-.DS_Store
-Thumbs.db
-
 ### Node ###
 .node/
 node_modules/
 npm-debug.log
+.npmrc
 
-### Idea ###
-.idea/
+### Log files ###
+**/log
+npm-debug.log*
+yarn-error.log*
+
+### Mac OSX + Windows ###
+.DS_Store
+Thumbs.db
 
 ### Vim ###
 *.sw[op]
 *.un~
 
-yarn.lock
+### Editor directory ###
+**/.idea
+**/.vscode
