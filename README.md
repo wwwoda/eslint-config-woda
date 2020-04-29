@@ -38,8 +38,7 @@ module.exports = {
 
 ## Usage with TypeScript
 
-Using with typescript requires a little more effort. In the same `.eslintrc.js`
-file, put
+Set your `eslint` config to
 
 ```js
 module.exports = {
@@ -81,10 +80,12 @@ If you are using for typescript files, the following additional settings are nee
         "javascript",
         "javascriptreact",
         {
-			"language": "typescript",
-			"autoFix": true
-			},
-        { "language": "typescriptreact", "autoFix": true }
+            "language": "typescript",
+            "autoFix": true
+        }, {
+            "language": "typescriptreact",
+            "autoFix": true
+        }
     ]
 }
 ```
