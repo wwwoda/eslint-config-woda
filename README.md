@@ -42,7 +42,7 @@ Set your `eslint` config to
 
 ```js
 module.exports = {
-    extends: ['slint-config-woda/typescript'],
+    extends: ['eslint-config-woda/typescript'],
     parserOptions: {
         project: './tsconfig.json',
         tsconfigRootDir: __dirname,
@@ -62,11 +62,20 @@ plugin for Visual Studio Code. Enable autoFormat for `javascript` and `javascrip
 
 ```json
 {
-    "eslint.autoFixOnSave": true,
+    "eslint.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
     "[javascript]": {
         "editor.formatOnSave": false
     },
     "[javascriptreact]": {
+        "editor.formatOnSave": false
+    },
+    "[typescript]": {
+        "editor.formatOnSave": false
+    },
+    "[typescriptreact]": {
         "editor.formatOnSave": false
     }
 }
