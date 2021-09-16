@@ -5,34 +5,30 @@
 
 // Use this configuration for standard TypeScript Projects.
 
-const env = require('./config/env');
-const rules = require('./config/rules');
-
 module.exports = {
-  env,
-  root: true,
+  globals: {
+    React: true,
+    JSX: true
+  },
   extends: [
-    'airbnb-typescript',
-    'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'airbnb-typescript',
+    './.eslintrc.js',
+    'plugin:import/typescript',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2019,
-    sourceType: 'module',
+    // ecmaVersion: 2019,
+    // sourceType: 'module',
     project: './tsconfig.json',
   },
-  plugins: [
-    'react-hooks',
-    '@typescript-eslint',
-  ],
-  settings: {
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
-    },
-    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
-  },
-  rules: {
-    ...rules,
-  },
+  plugins: ['@typescript-eslint'],
+  // settings: {
+  //   'import/parsers': {
+  //     '@typescript-eslint/parser': ['.ts', '.tsx'],
+  //   },
+  //   'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+  // },
+  rules: {},
 };
