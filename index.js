@@ -3,6 +3,6 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-module.exports = {
-  extends: ['./base.js'],
-};
+const eslintrc = require('./.eslintrc');
+
+module.exports = eslintrc;
