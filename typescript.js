@@ -19,20 +19,13 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    // ecmaVersion: 2019,
-    // sourceType: 'module',
     project: './tsconfig.json',
   },
   plugins: ['@typescript-eslint'],
-  // settings: {
-  //   'import/parsers': {
-  //     '@typescript-eslint/parser': ['.ts', '.tsx'],
-  //   },
-  //   'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
-  // },
   rules: {
+    '@typescript-eslint/no-use-before-define': 'warn',
     'react/jsx-filename-extension': [
-      1,
+      'warn',
       {
         extensions: ['.jsx', '.tsx'],
       },

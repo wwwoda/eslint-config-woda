@@ -27,5 +27,7 @@ module.exports = {
     // sourceType: 'module',
   },
   plugins: ['react-hooks'],
-  rules: {},
+  rules: {
+    'import/prefer-default-export': 'off',
+  },
 };
