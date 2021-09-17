@@ -8,7 +8,7 @@
 module.exports = {
   globals: {
     React: true,
-    JSX: true
+    JSX: true,
   },
   extends: [
     'plugin:@typescript-eslint/recommended',
@@ -30,5 +30,12 @@ module.exports = {
   //   },
   //   'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
   // },
-  rules: {},
+  rules: {
+    'react/jsx-filename-extension': [
+      1,
+      {
+        extensions: ['.jsx', '.tsx'],
+      },
+    ],
+  },
 };

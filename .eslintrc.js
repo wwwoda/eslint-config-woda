@@ -13,10 +13,7 @@ module.exports = {
     node: true,
   },
   // root: true,
-  extends: [
-    'airbnb',
-    'prettier',
-  ],
+  extends: ['airbnb'],
   parser: '@babel/eslint-parser',
   parserOptions: {
     requireConfigFile: false,
@@ -29,11 +26,6 @@ module.exports = {
     // },
     // sourceType: 'module',
   },
-  plugins: [
-    'prettier',
-    'react-hooks',
-  ],
-  rules: {
-    'import/prefer-default-export': 'off',
-  },
+  plugins: ['react-hooks'],
+  rules: {},
 };

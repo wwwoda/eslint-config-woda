@@ -1,14 +1,13 @@
 {
   "name": "eslint-config-woda",
   "version": "0.1.2",
-  "description": "ESLint and Prettier Config by Wes Bos",
+  "description": "ESLint Config by Woda",
   "keywords": [
     "config",
     "ecmascript",
     "eslint",
     "javascript",
     "lint",
-    "prettier",
     "styleguide",
     "typescript"
   ],
@@ -44,16 +43,15 @@
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-airbnb-typescript": "^14.0.0",
-    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.4.1",
     "typescript": "^4.4.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.5",
     "@babel/eslint-parser": "^7.15.4",
     "@babel/preset-react": "^7.14.5",
     "@types/node": "^16.9.1",
@@ -64,13 +62,11 @@
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-airbnb-typescript": "^14.0.0",
-    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.4.1",
     "typescript": "^4.4.3"
   },
   "scripts": {
