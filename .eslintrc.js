@@ -29,5 +29,6 @@ module.exports = {
   plugins: ['react-hooks'],
   rules: {
     'import/prefer-default-export': 'off',
+    'no-use-before-define': 'warn',
   },
 };
