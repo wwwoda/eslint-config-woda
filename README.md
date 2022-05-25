@@ -1,6 +1,6 @@
 # eslint-config-woda
 
-> The standard shareable config for eslint used by Woda.
+These are our settings for ESlint that we use at woda
 
 - Supports TypeScript projects using [`typescript-eslint`](https://github.com/typescript-eslint/typescript-eslint)
 - Easily extensible
@@ -8,27 +8,30 @@
 
 ## Installation
 
-If using `yarn`
+1. If you don't already have a `package.json` file, create one with `npm init`.
 
-```bash
-yarn add --dev eslint-config-woda eslint
+2. Then we need to install everything needed by the config:
+
+```
+npx install-peerdeps --dev eslint-config-woda
 ```
 
-or with `npm`
+3. You can see that all the necessary `devDependencies` were added to your `package.json` file
 
-```bash
-npm i --save-dev eslint-config-woda eslint
+
+If you're using `yarn` and the dependencies aren't showing up in your `package.json` file, try
+
+```
+npx install-peerdeps --dev eslint-config-woda -Y
 ```
 
-Create an eslint config file
+4. Create an .eslintrc.js config file in the root of your project's directory (same folder as your `package.json` file)
 
 ```bash
 touch .eslintrc.js
 ```
 
-## Usage with JavaScript
-
-Set your `eslint` config to
+5. The file should look like this
 
 ```js
 module.exports = {
@@ -36,67 +39,15 @@ module.exports = {
 };
 ```
 
-## Usage with TypeScript
-
-Set your `eslint` config to
+and for TypeScript like this
 
 ```js
 module.exports = {
     extends: ['eslint-config-woda/typescript'],
     parserOptions: {
         project: './tsconfig.json',
-        tsconfigRootDir: __dirname,
     },
 };
-```
-
-Putting `__dirname` in `parserOptions.tsconfigRootDir` is necessary because of [this issue](https://github.com/typescript-eslint/typescript-eslint/issues/251).
-
-## Visual Studio Code Integration
-
-Install the [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-plugin for Visual Studio Code. Enable autoFormat for `javascript` and `javascriptreact` files.
-
-- Go to Code > Preference [File > Preference for Windows & Linux].
-- Edit the WorkSpace Settings (Recommended).
-
-```json
-{
-    "eslint.enable": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "[javascript]": {
-        "editor.formatOnSave": false
-    },
-    "[javascriptreact]": {
-        "editor.formatOnSave": false
-    },
-    "[typescript]": {
-        "editor.formatOnSave": false
-    },
-    "[typescriptreact]": {
-        "editor.formatOnSave": false
-    }
-}
-```
-
-If you are using for typescript files, the following additional settings are needed.
-
-```json
-{
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        {
-            "language": "typescript",
-            "autoFix": true
-        }, {
-            "language": "typescriptreact",
-            "autoFix": true
-        }
-    ]
-}
 ```
 
 ## Docs
@@ -105,7 +56,5 @@ If you are using for typescript files, the following additional settings are nee
 - [Extending `eslint` configuration files](https://eslint.org/docs/user-guide/configuring#extending-configuration-files)
 - [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint)
 - [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
-
-## [Changelog](CHANGELOG.md)
 
 ## [License](LICENSE)
