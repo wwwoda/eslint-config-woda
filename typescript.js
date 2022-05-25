@@ -5,7 +5,7 @@
 
 // Use this configuration for standard TypeScript Projects.
 
-const base = require('./estlintrc.js');
+const base = require('./.eslintrc');
 
 module.exports = {
   env: base.env,
