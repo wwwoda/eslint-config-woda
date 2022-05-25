@@ -31,11 +31,13 @@ module.exports = {
   ],
   rules: {
     ...base.rules,
+    'no-unused-expressions': 'off',
+    '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true }],
+    'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error', { variables: false }],
 
     // Rules for plugin eslint-plugin-newline-destructuring
     '@typescript-eslint/indent': ['error', 2],
-    '@typescript-eslint/no-unused-expressions': 'off',
 
     // Rules for plugin eslint-plugin-unused-imports
     '@typescript-eslint/no-unused-vars': 'off',

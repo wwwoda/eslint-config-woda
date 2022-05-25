@@ -60,6 +60,7 @@ module.exports = {
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/require-default-props': 'off',
+
     // Rules for plugin eslint-plugin-newline-destructuring
     indent: 'off',
     'newline-destructuring/newline': [
@@ -74,6 +75,7 @@ module.exports = {
       'before',
       { overrides: { '=': 'none' } },
     ],
+
     // Rules for plugin eslint-plugin-unused-imports
     'no-unused-vars': 'off',
     'unused-imports/no-unused-imports': 'error',
