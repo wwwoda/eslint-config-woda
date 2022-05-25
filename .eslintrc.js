@@ -1,4 +1,4 @@
-// Copyright (c) 2020 David Mondok <david@woda.at>
+// Copyright (c) 2022 David Mondok <david@woda.at>
 //
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
