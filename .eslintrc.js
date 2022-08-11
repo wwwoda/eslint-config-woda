@@ -34,6 +34,7 @@ module.exports = {
     'unused-imports',
   ],
   rules: {
+    'comma-dangle': ['error', 'always-multiline'],
     'import/order': [
       'error',
       {
